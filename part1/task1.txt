@@ -1,0 +1,16 @@
+3. Containers running
+---------------------
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS               NAMES
+55b854a77cfc        nginx               "nginx -g 'daemon of…"   5 seconds ago        Up 4 seconds        80/tcp              xenodochial_noether
+24745078150b        nginx               "nginx -g 'daemon of…"   8 seconds ago        Up 7 seconds        80/tcp              nifty_elbakyan
+2e12babae058        nginx               "nginx -g 'daemon of…"   About a minute ago   Up About a minute   80/tcp              dreamy_shockley
+
+
+2. Containers stopped and one running
+-------------------------------------
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                      PORTS               NAMES
+55b854a77cfc        nginx               "nginx -g 'daemon of…"   About a minute ago   Exited (0) 12 seconds ago                       xenodochial_noether
+24745078150b        nginx               "nginx -g 'daemon of…"   About a minute ago   Exited (0) 7 seconds ago                        nifty_elbakyan
+2e12babae058        nginx               "nginx -g 'daemon of…"   2 minutes ago        Up 2 minutes                80/tcp              dreamy_shockley

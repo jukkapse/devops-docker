@@ -1,0 +1,14 @@
+$ docker build -t curler .
+
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+curler              latest              f06d615931ee        3 seconds ago       157MB
+
+$ docker run -it curler helsinki.fi
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>

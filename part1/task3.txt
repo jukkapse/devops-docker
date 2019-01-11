@@ -1,0 +1,20 @@
+Run container
+---------------------
+$ docker run -d --rm -it --name ubuntu3 ubuntu:16.04 sh -c 'read website; sleep 3; curl http://$website'
+
+
+Commands
+---------------------
+apt-get update
+apt-get install -y curl
+exit
+
+---------------------
+$ docker attach ubuntu3
+google.fi
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.fi/">here</A>.
+</BODY></HTML>

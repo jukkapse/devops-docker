@@ -1,0 +1,7 @@
+* Run docker image and Navigate to localhost:4200
+
+https://hub.docker.com/r/seppanenjp/ufotracker
+
+$ docker pull seppanenjp/ufotracker
+
+$ docker run ufotracker

@@ -1,0 +1,27 @@
+Before cleaning
+---------------
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
+55b854a77cfc        nginx               "nginx -g 'daemon of…"   3 minutes ago       Exited (0) 2 minutes ago                       xenodochial_noether
+24745078150b        nginx               "nginx -g 'daemon of…"   3 minutes ago       Exited (0) 2 minutes ago                       nifty_elbakyan
+2e12babae058        nginx               "nginx -g 'daemon of…"   4 minutes ago       Up 4 minutes               80/tcp              dreamy_shockley
+
+devops-docker jukkis$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+nginx               latest              568c4670fa80        2 weeks ago         109MB
+
+
+Cleaning commands
+-----------------
+docker stop 2e
+docker container prune
+docker rmi 56
+
+
+After cleaning
+--------------
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
