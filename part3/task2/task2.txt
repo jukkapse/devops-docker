@@ -1,0 +1,2 @@
+$ docker build -t yle .
+$ docker run -v ./application yle https://areena.yle.fi/1-3554230

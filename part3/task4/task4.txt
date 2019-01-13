@@ -1,0 +1,5 @@
+Frontend:           392MB
+-> After cleaning:  207MB
+
+Backend:            316MB
+-> After cleaning:  132MB

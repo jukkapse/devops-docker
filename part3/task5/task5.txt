@@ -1,0 +1,2 @@
+Ufotracker:         447MB
+-> After cleaning:  82MB
